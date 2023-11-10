@@ -7,9 +7,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Customer {
-    private String id;
-    private String name;
-    private Address address;
-    private String documentId;
-    private boolean isValidDOcument = false;
+  private String id;
+  private String name;
+  private Address address;
+  private String documentId;
+  private boolean isValidDocument = false;
 }

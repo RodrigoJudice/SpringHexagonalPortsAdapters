@@ -10,11 +10,11 @@ import com.git.judice.hexagonal.application.core.domain.Customer;
 @Mapper(componentModel = "spring")
 public interface CustomerMapper {
 
-    @Mapping(target = "id", ignore = true)
-    @Mapping(target = "address", ignore = true)
-    @Mapping(target = "isValidDOcument", ignore = true)
-    Customer toCustomer(CustomerRequest customerRequest);
+  @Mapping(target = "id", ignore = true)
+  @Mapping(target = "address", ignore = true)
+  @Mapping(target = "isValidDocument", ignore = true)
+  Customer toCustomer(CustomerRequest customerRequest);
 
-    CustomerResponse toCustomerResponse(Customer customer);
+  CustomerResponse toCustomerResponse(Customer customer);
 
 }

@@ -9,10 +9,10 @@ import lombok.Data;
 @Document(collection = "customers")
 public class CustomerEntity {
 
-    @Id
-    private String id;
-    private String name;
-    private AddressEntity address;
-    private String documentId;
-    private boolean isValidDOcument;
+  @Id
+  private String id;
+  private String name;
+  private AddressEntity address;
+  private String documentId;
+  private boolean isValidDocument;
 }
