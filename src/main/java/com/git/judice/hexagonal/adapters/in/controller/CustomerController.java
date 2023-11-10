@@ -60,7 +60,7 @@ public class CustomerController {
 
   @DeleteMapping("/{id}")
   public ResponseEntity<Void> deleteById(@PathVariable final String id) {
-    deleteCustomerByIdInputPort.deleteById(id);
+    deleteCustomerByIdInputPort.delete(id);
     return ResponseEntity.ok().build();
   }
 }
