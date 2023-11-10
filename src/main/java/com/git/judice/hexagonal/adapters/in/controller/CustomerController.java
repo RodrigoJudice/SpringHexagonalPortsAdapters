@@ -16,7 +16,7 @@ import com.git.judice.hexagonal.adapters.in.controller.response.CustomerResponse
 import com.git.judice.hexagonal.application.ports.in.DeleteCustomerByIdInputPort;
 import com.git.judice.hexagonal.application.ports.in.FindCustomerByIdInputPort;
 import com.git.judice.hexagonal.application.ports.in.InsertCustomerInputPort;
-import com.git.judice.hexagonal.application.ports.in.UpdateCustomerInputPorta;
+import com.git.judice.hexagonal.application.ports.in.UpdateCustomerInputPort;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,7 @@ public class CustomerController {
 
   private final InsertCustomerInputPort insertCustomerInputPort;
   private final FindCustomerByIdInputPort findCustomerByIdInputPort;
-  private final UpdateCustomerInputPorta updateCustomerInputPort;
+  private final UpdateCustomerInputPort updateCustomerInputPort;
   private final DeleteCustomerByIdInputPort deleteCustomerByIdInputPort;
   private final CustomerMapper customerMapper;
 

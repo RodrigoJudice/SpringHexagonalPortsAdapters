@@ -2,14 +2,14 @@ package com.git.judice.hexagonal.application.core.usecase;
 
 import com.git.judice.hexagonal.application.core.domain.Customer;
 import com.git.judice.hexagonal.application.ports.in.FindCustomerByIdInputPort;
-import com.git.judice.hexagonal.application.ports.in.UpdateCustomerInputPorta;
+import com.git.judice.hexagonal.application.ports.in.UpdateCustomerInputPort;
 import com.git.judice.hexagonal.application.ports.out.FindAddressByZipCodeOutputPort;
 import com.git.judice.hexagonal.application.ports.out.UpdateCustomerOutpuPort;
 
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class UpdateCustomerUseCase implements UpdateCustomerInputPorta {
+public class UpdateCustomerUseCase implements UpdateCustomerInputPort {
 
   private final FindCustomerByIdInputPort findCustomerByIdInputPort;
   private final FindAddressByZipCodeOutputPort findAddressByZipCodeOutputPort;
