@@ -7,5 +7,5 @@ import com.git.judice.hexagonal.application.core.domain.Address;
 
 @Mapper(componentModel = "spring")
 public interface AddressResponseMapper {
-    Address toAddress(AddressResponse addressResponse);
+  Address toAddress(AddressResponse addressResponse);
 }

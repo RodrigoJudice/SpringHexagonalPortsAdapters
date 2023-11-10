@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+### Wiremock executable ###
+wiremock/wiremock-standalone-3.3.1.jar

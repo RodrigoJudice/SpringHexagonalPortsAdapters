@@ -15,13 +15,14 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class FindCustomerByIdAdapter implements FindCustomerByIdOutputPort {
 
-    private final CustomerRepository customerRepository;
-    private final CustomerEntityMapper customerEntityMapper;
+  private final CustomerRepository customerRepository;
+  private final CustomerEntityMapper customerEntityMapper;
 
-    @Override
-    public Optional<Customer> findById(String id) {
-        var customerEntity = customerRepository.findById(id);
-        return customerEntity.map(customerEntityMapper::toCustomer);
-    }
+  @Override
+  public Optional<Customer> findById(String id) {
+    var customerEntity = customerRepository.findById(id);
+    return customerEntity.map(customerEntityMapper::toCustomer);
+
+  }
 
 }

@@ -10,6 +10,7 @@ import com.git.judice.hexagonal.application.core.domain.Customer;
 public interface CustomerMessageMapper {
 
   @Mapping(target = "address", ignore = true)
+  @Mapping(target = "validDocument", ignore = true)
   Customer toCustomer(CustomerMessage customerMessage);
 
 }

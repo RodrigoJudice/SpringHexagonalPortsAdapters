@@ -11,5 +11,5 @@ public class Customer {
   private String name;
   private Address address;
   private String documentId;
-  private boolean isValidDocument = false;
+  private boolean validDocument = false;
 }

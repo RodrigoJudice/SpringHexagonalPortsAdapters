@@ -5,12 +5,12 @@ import lombok.Data;
 @Data
 public class CustomerResponse {
 
-    private String name;
+  private String name;
 
-    private AddressResponse address;
+  private AddressResponse address;
 
-    private String cpf;
+  private String documentId;
 
-    private Boolean isValidCpf;
+  private Boolean validDocument;
 
 }
